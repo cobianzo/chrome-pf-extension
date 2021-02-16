@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Profit Farmers Analyzer</title>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1>Profit Farmers!</h1>
+    <button id="checkPage">Export signal params</button>
+    
+    <button id="check-saldo">Saldo ↺ </button>
+
+    <div id="create-trade-form">
+        <button id="prefill">Prefill</button>
+        <input id="base-price" name="base-price" value=""/>
+        <label>
+            Stop Loss initial
+            -<input type="number" min="0.1" max="11.0" step="0.1" name="stop-loss-percent" id="stop-loss-percent" value="4">% from entry price<br/>
+        </label>
+        <label>
+            T1
+            <input name="t1-percent" id="t1-percent" value="2.40">% from entry price<br/>
+            Stop Loss when T1 
+            <input name="stop-loss-after-t1-percent" id="stop-loss-after-t1-percent" value="4">% from entry price<br/>
+        </label>
+        <label>
+            T2
+            <input name="t2-percent" id="t2-percent" value="6.50">% from entry price<br/>
+            Stop Loss when T2
+            <input name="stop-loss-after-t2-percent" id="stop-loss-after-t2-percent" value="0">% from entry price<br/>
+        </label>
+        <label>
+            T3
+            <input name="t3-percent" id="t3-percent" value="11.00">% from entry price<br/>
+            Trailing Stop Loss when T3
+            <input name="trailing-stop-loss-after-t3-percent" id="trailing-stop-loss-after-t3-percent" value="11">% from highest price<br/>
+        </label>
+        <label>
+            T4
+            <input name="t4-percent" id="t4-percent" value="20.00">% from entry price<br/>
+            Trailing Stop Loss when T4
+            <input name="trailing-stop-loss-after-t4-percent" id="trailing-stop-loss-after-t4-percent" value="15">% from highest price<br/>
+        </label>
+        <button id="create-trade">Create trade</button>
+    </div>
+  </body>
+</html>
